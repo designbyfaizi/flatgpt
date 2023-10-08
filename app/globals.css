@@ -8,6 +8,16 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer components {
+  .infoText {
+    @apply p-4 bg-neutral-700/50 rounded-lg max-w-[300px]
+  }
+
+  .chatRow {
+    @apply rounded-lg px-5 py-3 text-sm flex items-center gap-x-2 hover:bg-neutral-800/70 active:bg-neutral-800/90 cursor-pointer text-neutral-300 transition-all duration-200 ease-out
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
