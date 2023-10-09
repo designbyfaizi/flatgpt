@@ -24,8 +24,11 @@ export default async function handler(
       return;
     }
 
+    console.log("Running Query!");
     // FlatGPT query
     const response = await query(prompt, model);
+
+    console.log("Response Received!");
 
     const message: Message = {
       text: response || "FlatGPT couldn't find an answer for that!",
@@ -37,6 +40,8 @@ export default async function handler(
       },
     };
 
+    console.log("Message created: ", { message });
+
     await adminDb
       .collection("users")
       .doc(session?.user?.email)
@@ -45,13 +50,13 @@ export default async function handler(
       .collection("messages")
       .add(message);
 
+    console.log("Message added by admin: ", { message });
+
     res.status(200).json({ answer: message?.text });
   } catch (err: any) {
-    res
-      .status(400)
-      .json({
-        answer: "FlatGPT couldn't find an answer for that!",
-        error: err.message,
-      });
+    res.status(400).json({
+      answer: "FlatGPT couldn't find an answer for that!",
+      error: err.message,
+    });
   }
 }
