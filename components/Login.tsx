@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 
@@ -17,6 +17,13 @@ function Login() {
       >
         Sign in to use FlatGPT
       </button>
+      <Image
+        src="/flatGPT.png"
+        className="mt-24"
+        width={60}
+        height={60}
+        alt="Logo"
+      />
     </div>
   );
 }
