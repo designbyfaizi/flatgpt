@@ -1,7 +1,7 @@
 import admin from "firebase-admin";
 import { getApps } from "firebase-admin/app";
 
-const serviceAccount: admin.ServiceAccount = {
+const serviceAccount: any = {
   type: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_TYPE!,
   project_id: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PROJECT_ID!,
   private_key_id: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PRIVATE_KEY_ID!,
