@@ -1,3 +1,21 @@
+## About the project
+I created a ChatGPT 🤖 clone! Here is my experience creating it so far.
+
+![Alt text](https://github.com/designbyfaizi/flatgpt/blob/main/public/FlatGPT_Banner.png?raw=true)
+
+This weekend, I created a clone of ChatGPT called FlatGPT (Don't ask me the reason behind the name). I created it using Next JS, Firebase Firestore, Next Auth, Openai API, Tailwind CSS, SWR, Vercel, and React Server Components. This was my first time working with NextJS 13, and server components were quite a challenge to understand and implement. Some high-level details are still quite hard to wrap my head around but in any case, I decided to create a working app that does the bare minimum of responding to your prompts. This was also my first time playing around with the OpenAI API. Sadly, I only have a maximum of $5 in free credits, so if you decide to test your prompts on FlatGPT, please do so sparingly. I'm excited to share this project with the world and I'll be creating more Next JS projects to add to my portfolio every week InshAllah.
+
+
+
+FlatGPT is a chatbot built using Next JS and OpenAi that can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way. It still doesn't have all the features of real ChatGPT, but you can still choose from different language models inside the app to get the type of result you want. I only created this to get started with Next 13 and to play around with OpenAI, and I believe this short project has served its purpose.
+
+
+I'm really proud of what I've accomplished with FlatGPT so far, and I'm excited to see what the future holds for Generative AI in general. I'm also looking forward to creating more projects and adding them to my portfolio in the coming weeks.
+
+
+Access the site: [FlatGPT](https://flatgpt.vercel.app)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
