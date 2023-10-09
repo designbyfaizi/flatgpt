@@ -1,13 +1,13 @@
 import admin from "firebase-admin";
 import { getApps } from "firebase-admin/app";
 
-const { privateKey } = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PRIVATE_KEY!);
+const { private_key } = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PRIVATE_KEY!);
 
 const serviceAccount: any = {
   type: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_TYPE!,
   project_id: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PROJECT_ID!,
   private_key_id: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PRIVATE_KEY_ID!,
-  private_key: privateKey,
+  private_key,
   client_email: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_CLIENT_EMAIL!,
   client_id: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_CLIENT_ID!,
   auth_uri: process.env.FIREBASE_SERVICE_ACCOUNT_KEY_AUTH_URI!,
